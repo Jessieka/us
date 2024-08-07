@@ -1,0 +1,23 @@
+<!-- page2.html -->
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>寻宝游戏</title>
+    <script>
+        function checkAnswer(answer, correctAnswer) {
+            if (answer === correctAnswer) {
+                window.location.href = "page3.html";
+            } else {
+                alert("再动动你的小呆瓜哦~");
+            }
+        }
+    </script>
+</head>
+<body>
+    <img src="image2.jpg" alt="图片2">
+    <p>要去哪里？</p>
+    <input type="text" id="answer2">
+    <button onclick="checkAnswer(document.getElementById('answer2').value, '2-114')">提交答案</button>
+</body>
+</html>

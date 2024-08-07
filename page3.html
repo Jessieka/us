@@ -1,0 +1,23 @@
+<!-- page3.html -->
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>寻宝游戏</title>
+    <script>
+        function checkAnswer(answer, correctAnswer) {
+            if (answer === correctAnswer) {
+                window.location.href = "page4.html";
+            } else {
+                alert("再动动你的小呆瓜哦~");
+            }
+        }
+    </script>
+</head>
+<body>
+    <img src="image3.jpg" alt="图片3">
+    <p>宝藏在哪里？</p>
+    <input type="text" id="answer3">
+    <button onclick="checkAnswer(document.getElementById('answer3').value, '书包')">提交答案</button>
+</body>
+</html>
