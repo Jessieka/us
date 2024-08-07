@@ -1,1 +1,24 @@
+<!-- page1.html -->
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>寻宝游戏</title>
+    <script>
+        function checkAnswer(answer, correctAnswer) {
+            if (answer === correctAnswer) {
+                window.location.href = "page2.html";
+            } else {
+                alert("再动动你的小呆瓜哦~");
+            }
+        }
+    </script>
+</head>
+<body>
+    <img src="image1.jpg" alt="图片1">
+    <p>要买什么？</p>
+    <input type="text" id="answer1">
+    <button onclick="checkAnswer(document.getElementById('answer1').value, '椰水')">提交答案</button>
+</body>
+</html>
 
